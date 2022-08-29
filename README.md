@@ -9,7 +9,7 @@ Before starting container download the data to be processed as those are large f
 ```sh
 python downloadData.py
 ```
-file to be downladed and extracted at location 
+file to be downladed and extracted at location which is ./data/GermanStackExchange/  if data is already downloaded one can copy into that location since that location will be mounted with docker containers
 
 A simple spark standalone cluster  A *docker-compose up* away 
 The Docker compose will create the following containers:
@@ -80,4 +80,6 @@ to acess the db we can use various sql querry tools for the conection check the 
 
 finaly after the whole process runs we can see in our db 
 ![snapshot Postgre](./readmeimage/db.PNG "Postgre snapshot")
+
+
 
