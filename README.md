@@ -54,11 +54,17 @@ when in the container we can run this command to run the main file
 ```
 
 to test we have a test file we can acess this externaaly from apps also
+
+```sh
+/opt/spark/bin/spark-submit --master spark://spark-master:7077 --jars /opt/spark-apps/postgresql-42.2.22.jar --driver-memory 1G --executor-memory 1G /opt/spark-apps/test.py
+```
+
 since we have mounted 2 folders we can also check the details in docker compose
 
-local     |   in the docker container
-./apps    |     /opt/spark-apps
-./data    |     /opt/spark-data
+local|in the docker container
+---|---
+./apps|/opt/spark-apps
+./data|/opt/spark-data
 
 ## Validate your cluster
 
