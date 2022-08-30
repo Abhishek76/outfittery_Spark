@@ -1,6 +1,6 @@
 CREATE SCHEMA stack;
 
-CREATE TABLE stack.users (
+CREATE TABLE stack.user (
     Id int,
     Reputation int,
     CreationDate timestamp,
