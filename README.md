@@ -6,6 +6,7 @@ Also have done some EDA and the whole analysis in Jupyter noter book its availab
 
 
 Before starting container download the data to be processed as those are large files we may directly download or just run the downloadData.py
+before that make sure we have the libraries urllib to download the 7z file , pyunpack to extract the file from the 7z file
 ```sh
 python downloadData.py
 ```
