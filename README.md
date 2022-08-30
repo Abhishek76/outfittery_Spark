@@ -2,6 +2,8 @@
 
 Also have done some EDA and the whole analysis in Jupyter noter book its available as Outfitter_pyspark.ipynb
 
+If the jupyter note book has to be run locally the spark jar file in the main folder has to be coppied to the jar forder where the apache spark folder is ther so that we can read the xml data
+
 
 
 
