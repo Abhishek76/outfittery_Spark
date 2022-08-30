@@ -82,7 +82,7 @@ Spark Worker 2 - http://localhost:9092/
 to acess the db we can use various sql querry tools for the conection check the postgre details in dockercompose yml file
 
 finaly after the whole process runs we can see in our db 
-root|.
+stack.user|.
 ---|---
  |-- Id: integer (nullable = true)
  |-- Reputation: integer (nullable = true)
