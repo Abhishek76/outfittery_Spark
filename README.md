@@ -82,6 +82,28 @@ Spark Worker 2 - http://localhost:9092/
 to acess the db we can use various sql querry tools for the conection check the postgre details in dockercompose yml file
 
 finaly after the whole process runs we can see in our db 
+root
+ |-- Id: integer (nullable = true)
+ |-- Reputation: integer (nullable = true)
+ |-- CreationDate: timestamp (nullable = true)
+ |-- DisplayName: string (nullable = true)
+ |-- WebsiteUrl: string (nullable = true)
+ |-- LastAccessDate: timestamp (nullable = true)
+ |-- _Location: string (nullable = true)
+ |-- Views: integer (nullable = true)
+ |-- UpVotes: integer (nullable = true)
+ |-- DownVotes: integer (nullable = true)
+ |-- ProfileImageUrl: string (nullable = true)
+ |-- AccountId: integer (nullable = true)
+ |-- Last_creationDate: timestamp (nullable = true)
+ |-- TotalPostsCount: long (nullable = true)
+ |-- PostsCountLast90Days: long (nullable = true)
+ |-- is_Editor: integer (nullable = true)
+ |-- is_critic: integer (nullable = true)
+ |-- AverageComment_OverPeriod: double (nullable = true)
+ |-- AverageValue_OverActiveMonths: integer (nullable = true)
+ 
+ .
 ![snapshot Postgre](./readmeimage/db.PNG "Postgre snapshot")
 
 
