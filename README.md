@@ -85,17 +85,17 @@ finaly after the whole process runs we can see in our db
 
 ## Some more points on the repo
 
-In the app folder main.py is the spark job that we submit for the whole data transformation and than push in to the postgre db
-the credentials for postgredb is the properties file in ./data
-other than that in docker compose yaml file we can see the creds
+* In the app folder main.py is the spark job that we submit for the whole data transformation and than push in to the postgre db
+* The credentials for postgredb is the properties file in ./data
+* Other than that in docker compose yaml file we can see the creds
 
-and there are 2 dockerfile one in the main folder another inside the post gre folder
+* There are 2 dockerfile one in the main folder another inside the post gre folder
 
-the one in main folder is used to build the image of spark container we start with a pre decided image which has java installed
+* The one in main folder is used to build the image of spark container we start with a pre decided image which has java installed
 
-the docker file in posgre folder is used to build the image of postgre with a seed sql file so that we have an empty users table created as stack.user
+* The docker file in posgre folder is used to build the image of postgre with a seed sql file so that we have an empty users table created as stack.user
 
-and also in app/main.py instead of broadcast join we have configured the spark for sort merge join  since the id collumn is easily sortable and both joining tables are large so broadcast join is avoided
+*  Also in app/main.py instead of broadcast join we have configured the spark for sort merge join  since the id collumn is easily sortable and both joining tables are large so broadcast join is avoided
 
 
 
